@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto";
+  background-color: rgb(77, 87, 129);
+  margin: 0;
+}
+.Container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.Card-Control {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 50px auto;
+}
+
+.Card {
+  background-color: rgb(38, 49, 102);
+  width: 15rem;
+  height: 330px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out; /* Adding transition for smooth effect */
+}
+
+.Card:hover {
+  transform: scale(1.05); /* Scale the card up by 5% on hover */
+}
+
+.Card .title {
+  font-size: 1.2rem;
+}
+
+.Card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+.Card .description {
+  font-size: 12px;
+  text-align: center;
+}
+.btn {
+  background-color: rgb(51, 65, 126);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffff;
+  margin: 5px;
+  transition: 0.1s ease-in;
+}
+.btn:hover {
+  transition: 0.1s ease-in;
+  background-color: rgb(63, 75, 126);
+
+  color: #e29f0f;
+}
+.navbar {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgb(37, 51, 112);
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+}
+.logo h1 {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.NavLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.NavLinks .navlink {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffff;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.icons span {
+  position: absolute;
+  top: -20px;
+  right: -5px;
+  background-color: rgb(70, 71, 184);
+  border-radius: 50%;
+  color: #ffff;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.active {
+  background-color: rgb(149, 160, 209);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-wrapper {
+  position: relative;
+  max-width: 100%;
+  background-color: rgb(37, 51, 112);
+  color: #ffff;
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  border: 2px solid #fff;
+}
+.cart-wrapper:hover {
+  background-color: rgb(80, 90, 136);
+
+  transition: 0.2s ease-in;
+  border: 2px solid #e60d0d;
+}
+.cartbtncontainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartbtncontainer button {
+  background-color: transparent;
+  padding: 5px 10px;
+  color: #fff;
+  font: inherit;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.cartimg {
+  max-width: 100%;
+  width: 20%;
+}
+.cartimg img {
+  width: 40%;
+}
+/* .cartPrice {
+} */
+.cartPrice span {
+  font-size: 1rem;
+  font-weight: bold;
+
+  font-weight: bold;
+}
+.carttitle h1 {
+  font-size: 1rem;
+  width: 200px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 4px;
+  padding: 5px 20px;
+  background-color: rgb(106, 119, 175);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.remove:hover {
+  background-color: #af4646;
+  color: #ffff;
+}
+.EmptyMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-weight: 700;
+  text-align: center;
+  color: red;
+}
+.totalPrice {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.Search {
+  padding: 5px 10px;
+  outline: none;
+}
+.btnwash {
+  background-color: rgb(35, 45, 136);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+
+  margin: 5px;
+}
+.btnwash:hover {
+  transition: 0.2s ease-in;
+  background-color: rgb(106, 119, 175);
+}
+.price {
+  background-color: rgb(37, 51, 112);
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px 30px;
+  transition: 0.1s ease-in;
+}
+
+.price:hover {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid red;
+  background-color: rgb(106, 119, 175);
+}
+.category {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.category button {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 10px 15px;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 2px solid #ffff;
+  background-color: rgb(46, 73, 161);
+  color: white;
+}
+.btnlogout {
+  font-weight: 800;
+  font-size: 7px;
+  padding: 20px;
+  width: 30px; /* Set equal width and height to maintain a circular shape */
+  height: 30px; /* Set equal width and height to maintain a circular shape */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(46, 73, 161);
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+.btnlogout:hover {
+  border: 2px solid #e29f0f; /* On hover, set the border to the desired color */
+}
+.inputSearch {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(248, 248, 248);
+  font-size: 10px;
+  transition: 0.2s ease-in;
+}
+
+.inputSearch:focus {
+  outline: none; /* To remove the default focus outline */
+  border: 3px solid rgb(223, 174, 15);
+  transition: 0.2s ease-in;
+}
+.from-control {
+  max-width: 400px;
+  margin: auto auto;
+  height: 90vh;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+.from-control h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.from-control form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.from-control form label {
+  display: block;
+  margin: 10px auto;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.from-control form input {
+  width: 90%;
+  padding: 10px;
+}
+.from_action {
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+}
+.from_action button {
+  color: #fff;
+  width: 90%;
+  padding: 10px;
+  font-size: 13px;
+  background-color: #af4646;
+  border: none;
+  border-radius: 5px;
+}
+.link {
+  margin-top: 20px;
+  text-decoration: none;
+}
+.Foundmsg {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.success {
+  color: green;
+  text-align: center;
+  background-color: lightblue;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+.menu-icon {
+  display: none;
+}
+.iconTime {
+  display: none;
+}
+@media (width< 760px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .iconTime {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    color: #fff;
+  }
+  .NavLinks {
+    flex-direction: column;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    color: #0000;
+    background-color: rgb(46, 73, 161);
+    opacity: 1;
+    z-index: 1;
+    padding: 10px;
+  }
+  .NavLinks.active {
+    left: 0;
+    transition: 0.2s ease-in;
+  }
+  .right {
+    gap: 30px;
+  }
+  .category {
+    flex-direction: column;
+    width: 100%;
+  }
+  .category button {
+    width: 40%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  /* .cart {
+  } */
+  .cart-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    width: 290px;
+  }
+  .cartimg img {
+    width: 100%;
+  }
+}
